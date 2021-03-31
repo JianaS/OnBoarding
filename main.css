@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+
+header {
+    background: linear-gradient( rgb(3 20 82 / 74%), rgb(3 20 82 / 75%)), url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 34vw;
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+#logo {
+    width: 5%;
+    margin-right: 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffffa3;
+}
+
+#navigation {
+    display: flex;
+    list-style-type: none;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+#buttons {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+button {
+    border: solid 1px #ffffffa3;
+    border-radius: 20px;
+    padding: 7px;
+    background: transparent;
+    color: #ffffffa3;
+    width: 85px;
+    margin-bottom: 2%
+}
+
+button:hover {
+    background-color: #2121e0;
+    border-color: #2121e0;
+}
+
+header h1 {
+    color: #ffffffe0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+
+header h6 {
+    color: #ffffffa3;
+    margin-top: 1%;
+    text-shadow: 0 0 black;
+}
+
+header section {
+    min-height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#formular {
+    min-height: 3em;
+    width: 37%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+input {
+    border: solid 1px #ffffffa3;
+    border-radius: 20px;
+    padding: 7px;
+    color: #ffffffa3;
+}
+
+input[type='text']::placeholder {
+    color: #80808047;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+#search {
+    background-color: #2121e0;
+    border-color: #2121e0;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 7%;
+    text-align: center;
+    color: #292f2fd4;
+}
+
+main h2 {
+    text-transform: uppercase;
+    color: #292f2f;
+}
+
+main h4 {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+main section {
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category {
+    border: solid #80808047 1px;
+    padding: 3% 5%;
+    max-width: 24%;
+}
+
+.category:hover {
+    color: #ffffffa3;
+    background-color: #2121e0;
+}
+
+@media all and (max-width:600px) {
+    div .category {
+        /* min-width: 45%; */
+        max-width: none;
+    }
+}
